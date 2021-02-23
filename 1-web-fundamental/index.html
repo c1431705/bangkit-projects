@@ -13,25 +13,62 @@
 <body>
     <!-- Header & Nav Section-->
     <header>
-        <nav>
-            <template></template>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" class="logo">Logo</a></li>
+                <li><a href="#">Nav1</a></li>
+                <li><a href="#">Nav2</a></li>
+                <li><a href="#">Nav3</a></li>
+                <li><a href="#">Nav4</a></li>
+                <li><a href="#">Nav5</a></li>
+                <li><a href="javascript:void(0);" class="logoNavMobile" onclick="navbarMobile()">≡</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- Main Content -->
     <main>
+        <div class="slideshow">
+            <div class="slider fade">
+                <img src="assets/img/aktivitas1.png">
+                <div class="tulisan">
+                    Caving
+                </div>
+            </div>
+        
+            <div class="slider fade">
+                <img src="assets/img/aktivitas1.png">
+                <div class="tulisan">
+                    Caving
+                </div>
+            </div>
+        
+            <div class="slider fade">
+                <img src="assets/img/aktivitas1.png">
+                <div class="tulisan">
+                    Caving
+                </div>
+            </div>
+            <a class="back" onclick="plusSlides(-1)">
+                &#x2B05;
+            </a>
+            <a class="next" onclick="plusSlides(1)">
+                &#x27A1;
+            </a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="poin" onclick="currentSlide(1)"></span>
+            <span class="poin" onclick="currentSlide(2)"></span>
+            <span class="poin" onclick="currentSlide(3)"></span>
+        </div>
+
         <div id="content">
             <article>
 
             </article>
-            <button onclick="alert('Anda menekan elemen button!')">Click Disini!</button>
-            <script>
-                var namaAku = "leo";
-                console.log(namaAku);
-
-                goName = "piy";
-                console.log(goName);
-            </script>
+            
             <article>
 
             </article>
